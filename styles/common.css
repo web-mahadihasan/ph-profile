@@ -106,18 +106,18 @@ main{
 /* profile info styles ends  */
 
 /* menu items style start  */
-.border-left{
-    width: 100%;
-}
-.border-left:hover{
-    background-image: var(--text-gradient);
-    border-radius: 11px;
-    z-index: -1;
-}
 .menu-items{
     margin-top: 1.5rem;
 }
 .menu-list{
+    width: 100%;
+}
+.menu-list:hover{
+    background-image: var(--text-gradient);
+    border-radius: 11px;
+    z-index: -1;
+}
+.menu-links{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,7 +130,7 @@ main{
     margin-left: 2px;
     background-color: rgb(23, 15, 33);
 }
-.menu-list a{
+.menu-links a{
     font-size: 1rem;
     text-decoration: none;
     color: var(--text-light-gray);
@@ -142,12 +142,12 @@ main{
     align-items: center;
     transition: .4s ease all;
 }
-.menu-list .check-items{
+.menu-links .check-items{
     color: #32b06f;
     font-size: 1.25rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.menu-list svg{
+.menu-links svg{
     font-size: 1.25rem;
     width: 35px;
     height: 35px;
@@ -161,29 +161,19 @@ main{
     transition: .4s ease all;
 }
 
-.menu-list:hover{
-    background: linear-gradient(90deg, rgba(38, 30, 47, 0.857) 2%, rgba(23,15,33,1) 96%);
+.menu-links:hover{
+    background: linear-gradient(90deg, rgba(34, 28, 41, 0.857) 2%, rgba(23,15,33,1) 96%);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: 100;
 }
-.menu-list:hover a{
+.menu-links:hover a{
     background: var(--text-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.menu-list:hover svg, .menu-list:hover .menu-icons{
+.menu-links:hover svg{
     background: var(--text-gradient);
     color: white;
 }
-
-/* .menu-list::before{
-    content: " ";
-    height: 100%;
-    width: 4px;
-    background-color: var(--text-gray);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-} */
 
 /* menu items style ends  */
