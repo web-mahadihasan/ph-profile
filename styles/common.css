@@ -38,16 +38,21 @@ header{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2rem;
-    /* margin-top: 100px; */
+    padding-top: 100px;
 }
 aside{
     grid-column: 1/2;
     background-color: rgb(23, 15, 33);
     padding: 1rem;
     border-radius: 10px;
+    height: 100%;
 }
 main{
     grid-column: 2/-1;
+    background-color: rgb(23, 15, 33);
+    padding: 1rem;
+    border-radius: 10px;
+    height: fit-content;
 }
 
 .company-info{
@@ -58,7 +63,7 @@ main{
 /* profile info styles start  */
 .profile-info{
     text-align: center;
-    border-bottom: 1px dashed var(--text-gray);
+    border-bottom: 1px dashed rgba(234, 170, 255, .2);
 }
 .profile-info .profile-img{
     width: 120px;
