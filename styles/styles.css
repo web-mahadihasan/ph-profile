@@ -69,6 +69,7 @@
 
 .profile-title svg{
     vertical-align: middle;
+    cursor: pointer;
 }
 /* shared style ends  */
 
@@ -97,6 +98,7 @@
     background-image: var(--text-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
 .user-info-container{
     display: grid;
@@ -152,6 +154,7 @@
     font-weight: 300;
     font-size: .9rem;
     padding: 0rem 1rem;
+    cursor: pointer;
 }
 
 /* device activity styles ends  */
@@ -373,6 +376,12 @@ input{
     color: #eaaaff;
     cursor: pointer;
     font-weight: 300;
+    padding: .7rem .9rem;
+    border: none;
+    border-radius: 5px;
+}
+.profile-edit .add-skill:active{
+    border: 1px solid rgba(74,64,188,1);
 }
 .take-skill-test{
     margin-top: 2rem;
@@ -388,6 +397,7 @@ input{
     -webkit-text-fill-color: transparent;
     border: 1px solid rgba(74,64,188,1);
     letter-spacing: 1px;
+    cursor: pointer;
 }
 /* user skill set styles ends  */
 

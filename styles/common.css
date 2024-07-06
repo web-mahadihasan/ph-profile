@@ -57,6 +57,7 @@ main{
 .company-info{
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
 }
 
 /* profile info styles start  */
@@ -75,6 +76,7 @@ main{
     background-origin: border-box;
     background-clip: content-box, border-box;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .profile-info .profile-img img{
@@ -106,6 +108,7 @@ main{
     border: none;
     color: #e17824;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 /* profile info styles ends  */
 
