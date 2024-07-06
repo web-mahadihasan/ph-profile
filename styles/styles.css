@@ -25,6 +25,37 @@
     font-weight: 400;
     margin-top: 1rem;
 }
+.button-container{
+    text-align: right;
+    margin-top: 2rem;
+}
+.button-container .btn-cancel{
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #a32fb5;
+    color: #a32fb5;
+    font-family: var(--primary-font-family);
+    font-size: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.button-container .btn-save{
+    padding: .6rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: var(--primary-font-family);
+    font-size: 1rem;
+    margin-right: 1rem;
+    background: var(--text-gradient);
+    color: var(--text-white);
+    cursor: pointer;
+}
+
 /* shared style ends  */
 
 
@@ -112,7 +143,7 @@
 /* device activity styles ends  */
 
 /* additional html styles start  */
-.additional-info-container i{
+.additional-info-container .fa-solid{
     font-size: 1.25rem;
     vertical-align: middle;
     color: var(--text-white);
@@ -127,33 +158,42 @@
     font-family: var(--primary-font-family);
     color: var(--text-white);
     font-weight: 400;
-}
-.additional-info{
-    margin-bottom: 1.5rem;
-}
-
-.additional-info select{
-    width: 100%;
-    height: 45px;
-    background-color: #231b2c;
-    color: var(--text-white);
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-family: var(--primary-font-family);
-    padding-left: 1rem;
-}
-.additional-info select option{
-    color: var(--text-white);
-    font-family: var(--primary-font-family);
-    font-size: .9rem;
-    font-weight: 300;
+    cursor: pointer;
 }
 .additional-info .secondary-text, .gender .secondary-text{
     text-transform: capitalize;
     margin-bottom: .9rem;
 }
-.additional-info .emp{
+
+.additional-info{
+    margin-bottom: 1.5rem;
+}
+
+.additional-info select, .add-country-dst .country-container{
+    width: 100%;
+    height: 45px;
+    background-color: #231b2c;
+    color: var(--text-white);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: var(--primary-font-family);
+    padding-left: 1rem;
+    cursor: pointer;
+}
+.additional-info select option,
+.add-country-dst .country-container .cntry-dst-option
+{
+    color: var(--text-white);
+    font-family: var(--primary-font-family);
+    font-size: .9rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.additional-info .emp,
+.addr-street .addr-st
+{
     width: 100%;
     height: 45px;
     background-color: #231b2c;
@@ -164,6 +204,55 @@
     font-family: var(--primary-font-family);
     padding-left: 1rem;
 }
-.additional-info .emp input{
-    /* padding-left: 1rem; */
+
+/* Additional part styles ends  */
+
+
+/* Address part styles start  */
+.address-container{
+    color: red;
 }
+.present-address .title, .permanent-address .title 
+{
+    font-size: 1.25rem;
+    font-family: var(--secondary-font-family);
+    margin-bottom: 2rem;
+    font-weight: 400;
+    margin-top: 30px;
+    color: #ea8b42;
+    text-transform: capitalize;
+}
+.address-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem;
+    margin: 2rem 0;
+    column-gap: 2rem;
+}
+.address-info .fa-solid, .addr-street .fa-solid{
+    font-size: 1.5rem;
+    font-weight: 400;
+    vertical-align: middle;
+    color: var(--text-white);
+    margin-right: .6rem;
+}
+.add-country-dst .address-info-title,
+.addr-street .address-info-title
+{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--primary-font-family);
+    color: var(--text-white);
+    margin-bottom: .8rem;
+}
+.same-present-add label{
+    font-size: 1rem;
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    color: var(--text-white);
+}
+.same-present-add input[type=checkbox]{
+    width: 30px;
+}
+
+/* Address part styles ends  */
