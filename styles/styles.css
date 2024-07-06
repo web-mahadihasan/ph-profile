@@ -67,6 +67,9 @@
     background: linear-gradient(90deg, rgba(184,44,180,1) 2%, rgba(74,64,188,1) 96%);
 }
 
+.profile-title svg{
+    vertical-align: middle;
+}
 /* shared style ends  */
 
 
@@ -181,7 +184,9 @@
 }
 
 .additional-info select, .add-country-dst .country-container,
-.education-info .education-select-container
+.education-info .education-select-container,
+.add-skill-card .add-skill,
+.job-profile-info .job-profile-data
 {
     width: 100%;
     height: 45px;
@@ -193,10 +198,13 @@
     font-family: var(--primary-font-family);
     padding-left: 1rem;
     cursor: pointer;
+    font-size: .9rem;
 }
 .additional-info select option,
 .add-country-dst .country-container .cntry-dst-option,
-.education-info .education-select-container .education-info-option
+.education-info .education-select-container .education-info-option,
+.add-skill-card .add-skill .add-skill-option,
+.job-profile-info .job-profile-data .job-profile-option
 {
     color: var(--text-white);
     font-family: var(--primary-font-family);
@@ -208,7 +216,8 @@
 
 .additional-info .emp,
 .addr-street .addr-st,
-.important-links .im-input
+.important-links .im-input,
+.add-skill-card .project-links
 {
     width: 100%;
     height: 45px;
@@ -238,7 +247,7 @@
     color: #ea8b42;
     text-transform: capitalize;
 }
-.address-info{
+.address-info, .add-skill-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2.5rem;
@@ -247,7 +256,9 @@
 }
 .address-info .fa-solid, .addr-street .fa-solid,
 .education-info-container .fa-solid,
-.important-links .im-icons
+.important-links .im-icons,
+.add-skill-card .skill-icons,
+.job-profile-info .icons
 {
     font-size: 1.5rem;
     font-weight: 300;
@@ -259,7 +270,9 @@
 .addr-street .address-info-title,
 .education-info .education-info-title,
 .cse-student .education-info-title,
-.important-links .important-links-title
+.important-links .important-links-title,
+.add-skill-card .add-skill-title,
+.job-profile-info .job-profile-title
 {
     font-size: 1rem;
     font-weight: 400;
@@ -361,5 +374,37 @@ input{
     cursor: pointer;
     font-weight: 300;
 }
-
+.take-skill-test{
+    margin-top: 2rem;
+}
+.take-skill-test .btn-skill-test{
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    background-color: #010313;
+    border: none;
+    outline: none;
+    background-image: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1px solid rgba(74,64,188,1);
+    letter-spacing: 1px;
+}
 /* user skill set styles ends  */
+
+/* job profile section style start  */
+.job-profile-container{
+   margin-top: 2rem;
+}
+.job-profile-info{
+    margin-bottom: 1.5rem;
+}
+.job-profile-info .looking-job,
+.job-profile-info .remote-job,
+.job-profile-info .job-exp
+{
+    font-size: 1rem;
+    color: var(--text-white);
+    margin-right: .7rem;
+    font-family: var(--primary-font-family);
+}
+/* job profile section style ends */
