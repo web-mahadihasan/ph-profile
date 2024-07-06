@@ -85,7 +85,7 @@ main{
     padding: 5px;
 
 }
-.profile-info .profile-name{
+.profile-info .person-name{
     font-size: 1.25rem;
     font-weight: 600;
     font-family: var(--primary-font-family);
@@ -164,6 +164,7 @@ main{
     justify-content: center;
     color: var(--text-gray);
     transition: .4s ease all;
+    color: var(--text-light-gray);
 }
 
 .menu-links:hover{
@@ -182,3 +183,8 @@ main{
 }
 
 /* menu items style ends  */
+
+
+.additional-info .gender{
+    width: 100%;
+}

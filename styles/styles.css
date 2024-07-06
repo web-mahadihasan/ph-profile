@@ -1,3 +1,6 @@
+*{
+    /* color: red; */
+}
 :root{
     --text-gray: rgba(238,224,255,.7);
     --text-light-gray: #817691;
@@ -24,14 +27,13 @@
 }
 /* shared style ends  */
 
-.profile-data-container{
-    /* color: red; */
-}
+
 .profile-title-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px dashed rgba(234, 170, 255, .2);
+    
 
 }
 .profile-data-title{
@@ -56,6 +58,7 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2.5rem;
     margin: 2rem 0;
+    column-gap: 2rem;
 }
 
 
@@ -88,7 +91,7 @@
     font-weight: 400;
     padding: 0rem 1rem;
 }
-.device-activity-data .table-row .table-data{
+.device-activity-data .table-row .table-data, .table-data time{
     font-size: .8rem;
     font-family: var(--primary-font-family);
     color: var(--text-gray);
@@ -104,4 +107,63 @@
     font-weight: 300;
     font-size: .9rem;
     padding: 0rem 1rem;
+}
+
+/* device activity styles ends  */
+
+/* additional html styles start  */
+.additional-info-container i{
+    font-size: 1.25rem;
+    vertical-align: middle;
+    color: var(--text-white);
+    margin-right: .7rem;
+}
+.additional-info-container .gender{
+    margin-bottom: 3rem;
+}
+.additional-info-container .gender label{
+    font-size: .9rem;
+    margin-right: 2rem;
+    font-family: var(--primary-font-family);
+    color: var(--text-white);
+    font-weight: 400;
+}
+.additional-info{
+    margin-bottom: 1.5rem;
+}
+
+.additional-info select{
+    width: 100%;
+    height: 45px;
+    background-color: #231b2c;
+    color: var(--text-white);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: var(--primary-font-family);
+    padding-left: 1rem;
+}
+.additional-info select option{
+    color: var(--text-white);
+    font-family: var(--primary-font-family);
+    font-size: .9rem;
+    font-weight: 300;
+}
+.additional-info .secondary-text, .gender .secondary-text{
+    text-transform: capitalize;
+    margin-bottom: .9rem;
+}
+.additional-info .emp{
+    width: 100%;
+    height: 45px;
+    background-color: #231b2c;
+    color: var(--text-white);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: var(--primary-font-family);
+    padding-left: 1rem;
+}
+.additional-info .emp input{
+    /* padding-left: 1rem; */
 }
