@@ -20,9 +20,9 @@
 /* shared css styles  */
 .common-text{
     color: var(--text-gray);
-    font-size: .8rem;
+    font-size: .9rem;
     font-family: var(--primary-font-family);
-    margin-bottom: .5rem;
+    margin-bottom: .7rem;
 }
 /* shared css styles end  */
 

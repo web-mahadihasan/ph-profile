@@ -35,12 +35,14 @@
     outline: none;
     border-radius: 5px;
     background: transparent;
-    border: 1px solid #a32fb5;
-    color: #a32fb5;
+    border: 1px solid #eaaaff;
+    color: #eaaaff;
     font-family: var(--primary-font-family);
     font-size: 1rem;
     margin-right: 1rem;
     cursor: pointer;
+    box-shadow: #eaaaff 0px 0.5px 0.5px 0px, #eaaaff 0px 0px 0px 1px;
+    transition: .4s ease all;
 }
 
 .button-container .btn-save{
@@ -54,6 +56,15 @@
     background: var(--text-gradient);
     color: var(--text-white);
     cursor: pointer;
+    transition: .4s ease all;
+}
+
+.button-container .btn-cancel:hover{
+   box-shadow: none;
+    border: 0.5px solid #eaaaff;
+}
+.button-container .btn-save:hover{
+    background: linear-gradient(90deg, rgba(184,44,180,1) 2%, rgba(74,64,188,1) 96%);
 }
 
 /* shared style ends  */
@@ -169,7 +180,9 @@
     margin-bottom: 1.5rem;
 }
 
-.additional-info select, .add-country-dst .country-container{
+.additional-info select, .add-country-dst .country-container,
+.education-info .education-select-container
+{
     width: 100%;
     height: 45px;
     background-color: #231b2c;
@@ -182,13 +195,15 @@
     cursor: pointer;
 }
 .additional-info select option,
-.add-country-dst .country-container .cntry-dst-option
+.add-country-dst .country-container .cntry-dst-option,
+.education-info .education-select-container .education-info-option
 {
     color: var(--text-white);
     font-family: var(--primary-font-family);
     font-size: .9rem;
     font-weight: 300;
     cursor: pointer;
+    background-color: #20172d;
 }
 
 .additional-info .emp,
@@ -229,23 +244,30 @@
     margin: 2rem 0;
     column-gap: 2rem;
 }
-.address-info .fa-solid, .addr-street .fa-solid{
+.address-info .fa-solid, .addr-street .fa-solid,
+.education-info-container .fa-solid
+{
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     vertical-align: middle;
     color: var(--text-white);
     margin-right: .6rem;
 }
 .add-country-dst .address-info-title,
-.addr-street .address-info-title
+.addr-street .address-info-title,
+.education-info .education-info-title,
+.cse-student .education-info-title
 {
     font-size: 1rem;
     font-weight: 400;
     font-family: var(--primary-font-family);
     color: var(--text-white);
     margin-bottom: .8rem;
+    text-transform: capitalize;
 }
-.same-present-add label{
+.same-present-add label,
+.crnt-student label
+{
     font-size: 1rem;
     font-family: var(--primary-font-family);
     font-weight: 400;
@@ -256,3 +278,66 @@
 }
 
 /* Address part styles ends  */
+
+
+/* Edducation section styles start */
+.education-info-container{
+    color: red;
+    margin-top: 2rem;
+}
+.education-info .education-select-container{
+    margin-bottom: 1.5rem;
+}
+.crnt-student{
+    margin-bottom: 2rem;
+}
+/* .passing-year input[type=month]{
+    width: 50%;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+} */
+.cse-student label{
+    font-size: 1rem;
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    color: var(--text-white);
+    margin-right: .8rem;
+}
+/* Edducation section styles ends */
+
+.passing-year .month{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #20172d;
+    height: 40px;
+    transition: .4s ease all;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.passing-year .month input{
+    background-color: #20172d;
+    color: white;
+    height: 100%;
+    display: none;
+    border: none;
+    outline: none;
+    transition: .4s ease all;
+    width: 100%;
+}
+.passing-year .month i{
+    vertical-align: middle;
+    display: none;
+    transition: .4s ease all;
+}
+.passing-year .month:focus, 
+.passing-year .month:valid, 
+.passing-year .month:hover
+input{
+    display: block;
+}
+
+.passing-year .month:hover i{
+    display: block;
+}
