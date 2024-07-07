@@ -41,7 +41,7 @@
     font-size: 1rem;
     margin-right: 1rem;
     cursor: pointer;
-    box-shadow: #eaaaff 0px 0.5px 0.5px 0px, #eaaaff 0px 0px 0px 1px;
+    box-shadow: #eaaaff 0px 0px 0.5px 0px, #eaaaff 0px 0px 0px 0.5px;
     transition: .4s ease all;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .button-container .btn-cancel:hover{
-   box-shadow: none;
+    box-shadow: none;
     border: 0.5px solid #eaaaff;
 }
 .button-container .btn-save:hover{
